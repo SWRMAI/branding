@@ -1,0 +1,252 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opticmind-labs.github.io/branding/brand-styles.schema.json",
+  "title": "OpticMind Labs Brand Styles",
+  "type": "object",
+  "required": [
+    "brand",
+    "voice",
+    "colors",
+    "typography",
+    "layout",
+    "components",
+    "usage",
+    "agentPrompts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "object",
+      "required": [
+        "name",
+        "shortName",
+        "version",
+        "tagline",
+        "positioning"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "shortName": { "type": "string" },
+        "version": { "type": "string" },
+        "tagline": { "type": "string" },
+        "positioning": { "type": "string" }
+      }
+    },
+    "voice": {
+      "type": "object",
+      "required": [
+        "traits",
+        "guidelines"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "traits": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "guidelines": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      }
+    },
+    "colors": {
+      "type": "object",
+      "required": [
+        "primary",
+        "supporting",
+        "gradients"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "primary": { "$ref": "#/$defs/colorGroup" },
+        "supporting": { "$ref": "#/$defs/colorGroup" },
+        "gradients": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "css",
+              "usage"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "css": { "type": "string" },
+              "usage": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "typography": {
+      "type": "object",
+      "required": [
+        "families",
+        "scale"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "families": {
+          "type": "object",
+          "required": [
+            "display",
+            "body",
+            "accent"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "display": { "$ref": "#/$defs/fontFamily" },
+            "body": { "$ref": "#/$defs/fontFamily" },
+            "accent": { "$ref": "#/$defs/fontFamily" }
+          }
+        },
+        "scale": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/typeStyle" }
+        }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "required": [
+        "maxWidth",
+        "sectionPadding",
+        "gridGap",
+        "radius",
+        "border",
+        "shadow"
+      ],
+      "additionalProperties": { "type": "string" },
+      "properties": {
+        "maxWidth": { "type": "string" },
+        "sectionPadding": { "type": "string" },
+        "gridGap": { "type": "string" },
+        "radius": { "type": "string" },
+        "border": { "type": "string" },
+        "shadow": { "type": "string" }
+      }
+    },
+    "components": {
+      "type": "object",
+      "required": [
+        "button",
+        "card",
+        "logo"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "button": { "type": "object" },
+        "card": { "type": "object" },
+        "logo": { "type": "object" }
+      }
+    },
+    "usage": {
+      "type": "object",
+      "required": [
+        "do",
+        "dont"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "do": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "dont": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "agentPrompts": {
+      "type": "object",
+      "required": [
+        "uiImplementation",
+        "copywriting",
+        "visualAsset"
+      ],
+      "additionalProperties": { "type": "string" },
+      "properties": {
+        "uiImplementation": { "type": "string" },
+        "copywriting": { "type": "string" },
+        "visualAsset": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "colorGroup": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/colorToken" }
+    },
+    "colorToken": {
+      "type": "object",
+      "required": [
+        "hex",
+        "usage"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "hex": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "usage": { "type": "string" }
+      }
+    },
+    "fontFamily": {
+      "type": "object",
+      "required": [
+        "name",
+        "fallback",
+        "usage",
+        "weights"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "fallback": { "type": "string" },
+        "usage": { "type": "string" },
+        "weights": {
+          "type": "array",
+          "items": { "type": "integer" }
+        }
+      }
+    },
+    "typeStyle": {
+      "type": "object",
+      "required": [
+        "fontFamily",
+        "fontWeight",
+        "fontSize",
+        "lineHeight"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "fontFamily": {
+          "type": "string",
+          "enum": [
+            "display",
+            "body",
+            "accent"
+          ]
+        },
+        "fontWeight": { "type": "integer" },
+        "fontSize": { "type": "string" },
+        "lineHeight": {
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "letterSpacing": { "type": "string" },
+        "textTransform": { "type": "string" }
+      }
+    }
+  }
+}

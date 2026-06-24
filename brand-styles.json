@@ -1,0 +1,197 @@
+{
+  "$schema": "./brand-styles.schema.json",
+  "brand": {
+    "name": "OpticMind Labs",
+    "shortName": "OpticMind",
+    "version": "1.0",
+    "tagline": "Capture, Analyze, Optimize",
+    "positioning": "A precise, composed visual system for intelligent perception products."
+  },
+  "voice": {
+    "traits": [
+      "precise",
+      "composed",
+      "human"
+    ],
+    "guidelines": [
+      "Use measurable details and operational specifics.",
+      "Prefer calm authority over hype.",
+      "Frame technology as serving people and places.",
+      "Avoid vague futurism, fear-based surveillance language, and exaggerated claims."
+    ]
+  },
+  "colors": {
+    "primary": {
+      "obsidian": {
+        "hex": "#0B0B0D",
+        "usage": "Primary canvas"
+      },
+      "kintsugiGold": {
+        "hex": "#D4A437",
+        "usage": "Signature accent, dividers, logo strokes, and key actions"
+      }
+    },
+    "supporting": {
+      "brightGold": {
+        "hex": "#EBC873",
+        "usage": "Highlights and high-contrast gold text"
+      },
+      "deepGold": {
+        "hex": "#8A6D1F",
+        "usage": "Gold depth, gradients, pressed states"
+      },
+      "graphite": {
+        "hex": "#131316",
+        "usage": "Panels and cards"
+      },
+      "panel": {
+        "hex": "#0E0E11",
+        "usage": "Raised dark surfaces"
+      },
+      "pearl": {
+        "hex": "#F3EEE2",
+        "usage": "Primary text on dark, light surface applications"
+      },
+      "mist": {
+        "hex": "#B7B1A4",
+        "usage": "Secondary text"
+      },
+      "ash": {
+        "hex": "#807A6E",
+        "usage": "Muted text, metadata, captions"
+      }
+    },
+    "gradients": {
+      "goldSignature": {
+        "css": "linear-gradient(135deg, #F2D98C 0%, #EBC873 42%, #D4A437 68%, #8A6D1F 100%)",
+        "usage": "Wordmark text, logo strokes, primary CTAs"
+      }
+    }
+  },
+  "typography": {
+    "families": {
+      "display": {
+        "name": "Space Grotesk",
+        "fallback": "system-ui, sans-serif",
+        "usage": "Headlines, navigation, buttons, labels",
+        "weights": [
+          500,
+          600,
+          700
+        ]
+      },
+      "body": {
+        "name": "Manrope",
+        "fallback": "system-ui, sans-serif",
+        "usage": "Body copy, dashboards, tables, captions",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ]
+      },
+      "accent": {
+        "name": "Cormorant Garamond",
+        "fallback": "Georgia, serif",
+        "usage": "Editorial accent and pull quotes only",
+        "weights": [
+          500
+        ]
+      }
+    },
+    "scale": {
+      "hero": {
+        "fontFamily": "display",
+        "fontWeight": 600,
+        "fontSize": "clamp(56px, 9vw, 112px)",
+        "lineHeight": 1.05
+      },
+      "h1": {
+        "fontFamily": "display",
+        "fontWeight": 600,
+        "fontSize": "52px",
+        "lineHeight": 1.08
+      },
+      "h2": {
+        "fontFamily": "display",
+        "fontWeight": 600,
+        "fontSize": "36px",
+        "lineHeight": 1.12
+      },
+      "body": {
+        "fontFamily": "body",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": 1.7
+      },
+      "caption": {
+        "fontFamily": "body",
+        "fontWeight": 600,
+        "fontSize": "12px",
+        "lineHeight": 1.4,
+        "letterSpacing": "0.08em",
+        "textTransform": "uppercase"
+      }
+    }
+  },
+  "layout": {
+    "maxWidth": "1120px",
+    "sectionPadding": "78px 0",
+    "gridGap": "18px",
+    "radius": "6px",
+    "border": "1px solid rgba(212, 164, 55, 0.16)",
+    "shadow": "0 24px 80px rgba(0, 0, 0, 0.34)"
+  },
+  "components": {
+    "button": {
+      "height": "40px",
+      "radius": "6px",
+      "fontFamily": "display",
+      "fontWeight": 700,
+      "letterSpacing": "0.08em",
+      "textTransform": "uppercase",
+      "primaryBackground": "goldSignature",
+      "secondaryBackground": "transparent"
+    },
+    "card": {
+      "background": "panel",
+      "border": "1px solid rgba(212, 164, 55, 0.16)",
+      "radius": "6px"
+    },
+    "logo": {
+      "motifs": [
+        "eye outline",
+        "iris circle",
+        "hexagonal intelligence frame",
+        "gold center point"
+      ],
+      "clearspace": "At least one iris-height around the mark",
+      "minimumMonogramWidth": "28px",
+      "minimumFullLockupWidth": "120px"
+    }
+  },
+  "usage": {
+    "do": [
+      "Use Obsidian as the dominant canvas.",
+      "Use gold sparingly for meaningful signal.",
+      "Keep cards and controls at 6px radius.",
+      "Use Space Grotesk for display and UI labels.",
+      "Use Manrope for readable operational content.",
+      "Use thin gold lines to connect sections or show data flow."
+    ],
+    "dont": [
+      "Do not use off-palette blues, pastels, or playful gradients.",
+      "Do not flood layouts with gold.",
+      "Do not blur or lower logo opacity.",
+      "Do not distort the mark.",
+      "Do not use ornate decoration without functional meaning.",
+      "Do not use vague futurist or fear-based copy."
+    ]
+  },
+  "agentPrompts": {
+    "uiImplementation": "Use the OpticMind Labs brand kit. Load brand-styles.json and follow skills/opticmind-brand/SKILL.md. Build a dark, precise, operational interface using Obsidian, Graphite panels, sparse Kintsugi Gold accents, Space Grotesk headings, and Manrope body text. Keep radii at 6px, avoid off-palette colors, and reserve gold for signal, dividers, and primary actions.",
+    "copywriting": "Write in the OpticMind Labs voice: precise, composed, human. Use specific operational language and measurable outcomes. Avoid hype, vague futurism, fear-based surveillance language, and exaggerated claims.",
+    "visualAsset": "Create an OpticMind Labs visual asset using an obsidian background, restrained gold connection lines, engineered composition, and high contrast. Use the eye/iris/hexagon motif only when it clarifies the message. Do not use bright off-brand blues, playful gradients, soft pastel palettes, heavy decoration, or blurred atmospheric stock imagery."
+  }
+}
