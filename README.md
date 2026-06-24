@@ -22,6 +22,8 @@ The site also includes a "Download JSON" action so the brand styles can be hande
 
 ## GitHub Pages
 
+Live site: https://swrmai.github.io/branding/
+
 This repo is static. Enable GitHub Pages from the repository settings and serve from the branch root. No build step is required.
 
 ## Local Preview
