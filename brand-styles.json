@@ -4,8 +4,38 @@
     "name": "OpticMind Labs",
     "shortName": "OpticMind",
     "version": "1.0",
-    "tagline": "Capture, Analyze, Optimize",
-    "positioning": "A precise, composed visual system for intelligent perception products."
+    "tagline": "Capture. Analyze. Optimize.",
+    "slogan": "Turning movements into meaning",
+    "brandLine": "Beauty in the break.",
+    "positioning": "A precise, composed visual system for intelligent perception products, built on the kintsugi principle: the fracture is where the gold goes.",
+    "narrative": "OpticMind builds distributed computer-vision and remote command systems that see what others miss. Kintsugi - the Japanese art of mending with gold - is the governing metaphor: the world is full of gaps in awareness, and OpticMind traces those fractures and fills them with intelligence."
+  },
+  "assets": {
+    "productionLogo": {
+      "path": "assets/opticmind-labs-logo.png",
+      "usage": "Official production lockup (dome camera with AI core, particle ring, wordmark, tagline). Use on Obsidian or near-black backgrounds only; blend the black plate with mix-blend-mode: screen on dark surfaces."
+    },
+    "kintsugiVein": {
+      "path": "assets/kintsugi-vein.jpg",
+      "usage": "Hero backdrop texture at 0.2-0.3 opacity with a radial vignette into Obsidian; also cropped as a corner texture on cards."
+    },
+    "kintsugiVase": {
+      "path": "assets/kintsugi-vase.webp",
+      "usage": "Brand-story imagery for the kintsugi idea."
+    },
+    "kintsugiBowl": {
+      "path": "assets/kintsugi-bowl.avif",
+      "usage": "Motif imagery alongside gold-seam graphics."
+    }
+  },
+  "motif": {
+    "name": "Kintsugi gold seams",
+    "principle": "The seam is the connective tissue - section dividers, hero edges, data flows. Thin, irregular, alive. Never decorative noise; always a path with meaning.",
+    "rules": [
+      "Draw seams as thin (1-2.5px) irregular polylines in the gold gradient.",
+      "Use photographic kintsugi textures only at low opacity behind heroes, vignetted into Obsidian.",
+      "Keep seams secondary to content; never flood a layout with gold."
+    ]
   },
   "voice": {
     "traits": [
@@ -14,9 +44,10 @@
       "human"
     ],
     "guidelines": [
-      "Use measurable details and operational specifics.",
+      "Use measurable details and operational specifics - latency in milliseconds, coverage in square kilometers.",
       "Prefer calm authority over hype.",
-      "Frame technology as serving people and places.",
+      "Frame technology as serving people and places: we connect, we don't surveil.",
+      "Lean on the kintsugi idea - fractures traced and filled with intelligence - for brand moments.",
       "Avoid vague futurism, fear-based surveillance language, and exaggerated claims."
     ]
   },
@@ -28,13 +59,17 @@
       },
       "kintsugiGold": {
         "hex": "#D4A437",
-        "usage": "Signature accent, dividers, logo strokes, and key actions"
+        "usage": "Signature accent, seams, logo strokes, and key actions"
       }
     },
     "supporting": {
       "brightGold": {
         "hex": "#EBC873",
         "usage": "Highlights and high-contrast gold text"
+      },
+      "midGold": {
+        "hex": "#C9A24B",
+        "usage": "Gradient mid-stop and secondary gold accents"
       },
       "deepGold": {
         "hex": "#8A6D1F",
@@ -56,6 +91,10 @@
         "hex": "#B7B1A4",
         "usage": "Secondary text"
       },
+      "stone": {
+        "hex": "#8B867B",
+        "usage": "Card body copy and tertiary text"
+      },
       "ash": {
         "hex": "#807A6E",
         "usage": "Muted text, metadata, captions"
@@ -63,8 +102,20 @@
     },
     "gradients": {
       "goldSignature": {
-        "css": "linear-gradient(135deg, #F2D98C 0%, #EBC873 42%, #D4A437 68%, #8A6D1F 100%)",
-        "usage": "Wordmark text, logo strokes, primary CTAs"
+        "css": "linear-gradient(135deg, #8A6D1F 0%, #EBC873 40%, #C9A24B 70%, #7E631B 100%)",
+        "usage": "Signature kintsugi gradient - logo strokes, seams, large gold surfaces"
+      },
+      "goldVertical": {
+        "css": "linear-gradient(180deg, #F2D98C 0%, #9A7B2E 100%)",
+        "usage": "Iris fills, dots, node particles, thin seam highlights"
+      },
+      "goldText": {
+        "css": "linear-gradient(135deg, #F2D98C 0%, #C9A24B 55%, #8A6D1F 100%)",
+        "usage": "Gradient-clipped wordmarks and emphasized headline words"
+      },
+      "goldButton": {
+        "css": "linear-gradient(135deg, #EBC873 0%, #D4A437 58%, #8A6D1F 100%)",
+        "usage": "Primary CTA fills"
       }
     }
   },
@@ -73,8 +124,9 @@
       "display": {
         "name": "Space Grotesk",
         "fallback": "system-ui, sans-serif",
-        "usage": "Headlines, navigation, buttons, labels",
+        "usage": "Headlines, navigation, buttons, labels, wordmarks",
         "weights": [
+          400,
           500,
           600,
           700
@@ -85,6 +137,7 @@
         "fallback": "system-ui, sans-serif",
         "usage": "Body copy, dashboards, tables, captions",
         "weights": [
+          300,
           400,
           500,
           600,
@@ -94,53 +147,65 @@
       "accent": {
         "name": "Cormorant Garamond",
         "fallback": "Georgia, serif",
-        "usage": "Editorial accent and pull quotes only",
+        "usage": "Hero statements and brand moments (often italic, gradient-clipped on the key word), editorial accents, pull quotes",
         "weights": [
-          500
+          400,
+          500,
+          600
         ]
       }
     },
     "scale": {
-      "hero": {
-        "fontFamily": "display",
-        "fontWeight": 600,
-        "fontSize": "clamp(56px, 9vw, 112px)",
-        "lineHeight": 1.05
+      "heroSerif": {
+        "fontFamily": "accent",
+        "fontWeight": 500,
+        "fontSize": "clamp(44px, 7vw, 84px)",
+        "lineHeight": 1.02,
+        "letterSpacing": "-0.01em"
       },
       "h1": {
         "fontFamily": "display",
         "fontWeight": 600,
-        "fontSize": "52px",
-        "lineHeight": 1.08
+        "fontSize": "36px",
+        "lineHeight": 1.15
       },
       "h2": {
         "fontFamily": "display",
-        "fontWeight": 600,
-        "fontSize": "36px",
-        "lineHeight": 1.12
+        "fontWeight": 500,
+        "fontSize": "22px",
+        "lineHeight": 1.2
       },
       "body": {
         "fontFamily": "body",
         "fontWeight": 400,
         "fontSize": "16px",
-        "lineHeight": 1.7
+        "lineHeight": 1.8
       },
       "caption": {
         "fontFamily": "body",
-        "fontWeight": 600,
+        "fontWeight": 500,
         "fontSize": "12px",
         "lineHeight": 1.4,
-        "letterSpacing": "0.08em",
+        "letterSpacing": "0.05em",
+        "textTransform": "uppercase"
+      },
+      "eyebrow": {
+        "fontFamily": "body",
+        "fontWeight": 500,
+        "fontSize": "12px",
+        "lineHeight": 1.4,
+        "letterSpacing": "0.32em",
         "textTransform": "uppercase"
       }
     }
   },
   "layout": {
-    "maxWidth": "1120px",
-    "sectionPadding": "78px 0",
-    "gridGap": "18px",
+    "maxWidth": "1100px",
+    "sectionPadding": "80px 32px",
+    "gridGap": "24px",
     "radius": "6px",
-    "border": "1px solid rgba(212, 164, 55, 0.16)",
+    "border": "1px solid rgba(212, 164, 55, 0.14)",
+    "borderStrong": "1px solid rgba(212, 164, 55, 0.22)",
     "shadow": "0 24px 80px rgba(0, 0, 0, 0.34)"
   },
   "components": {
@@ -151,20 +216,29 @@
       "fontWeight": 700,
       "letterSpacing": "0.08em",
       "textTransform": "uppercase",
-      "primaryBackground": "goldSignature",
+      "primaryBackground": "goldButton",
       "secondaryBackground": "transparent"
     },
     "card": {
       "background": "panel",
-      "border": "1px solid rgba(212, 164, 55, 0.16)",
-      "radius": "6px"
+      "border": "1px solid rgba(212, 164, 55, 0.14)",
+      "radius": "6px",
+      "stageBackground": "radial-gradient(circle at 50% 40%, #161318, #0A0A0C)"
     },
     "logo": {
+      "productionLockup": "assets/opticmind-labs-logo.png",
+      "marks": {
+        "apertureEye": "Primary vector mark: camera iris nested in an eye with hexagonal intelligence frame and a single gold seam.",
+        "swarmIris": "Edge nodes resolving into one iris; echoes the particle ring of the production lockup.",
+        "fracturedO": "Monogram for tight spaces (favicons, app tiles): a lens cracked and rejoined in gold."
+      },
       "motifs": [
         "eye outline",
         "iris circle",
         "hexagonal intelligence frame",
-        "gold center point"
+        "gold center point",
+        "swarm particle ring",
+        "kintsugi seam"
       ],
       "clearspace": "At least one iris-height around the mark",
       "minimumMonogramWidth": "28px",
@@ -174,24 +248,26 @@
   "usage": {
     "do": [
       "Use Obsidian as the dominant canvas.",
-      "Use gold sparingly for meaningful signal.",
+      "Use gold sparingly for meaningful signal - a seam, never a flood.",
+      "Use the production lockup (assets/opticmind-labs-logo.png) for official outward-facing applications on dark backgrounds.",
+      "Use kintsugi photo textures at low opacity behind heroes, vignetted into Obsidian.",
+      "Use Cormorant Garamond (often italic, gold gradient on the key word) for hero statements and brand moments.",
       "Keep cards and controls at 6px radius.",
-      "Use Space Grotesk for display and UI labels.",
-      "Use Manrope for readable operational content.",
-      "Use thin gold lines to connect sections or show data flow."
+      "Use Space Grotesk for display and UI labels, Manrope for operational content.",
+      "Use thin, irregular gold seam lines to connect sections or show data flow."
     ],
     "dont": [
       "Do not use off-palette blues, pastels, or playful gradients.",
       "Do not flood layouts with gold.",
-      "Do not blur or lower logo opacity.",
-      "Do not distort the mark.",
+      "Do not place the logo on light or busy mid-tone backgrounds.",
+      "Do not blur, lower opacity of, distort, or recolor the mark.",
       "Do not use ornate decoration without functional meaning.",
       "Do not use vague futurist or fear-based copy."
     ]
   },
   "agentPrompts": {
-    "uiImplementation": "Use the OpticMind Labs brand kit. Load brand-styles.json and follow skills/opticmind-brand/SKILL.md. Build a dark, precise, operational interface using Obsidian, Graphite panels, sparse Kintsugi Gold accents, Space Grotesk headings, and Manrope body text. Keep radii at 6px, avoid off-palette colors, and reserve gold for signal, dividers, and primary actions.",
-    "copywriting": "Write in the OpticMind Labs voice: precise, composed, human. Use specific operational language and measurable outcomes. Avoid hype, vague futurism, fear-based surveillance language, and exaggerated claims.",
-    "visualAsset": "Create an OpticMind Labs visual asset using an obsidian background, restrained gold connection lines, engineered composition, and high contrast. Use the eye/iris/hexagon motif only when it clarifies the message. Do not use bright off-brand blues, playful gradients, soft pastel palettes, heavy decoration, or blurred atmospheric stock imagery."
+    "uiImplementation": "Use the OpticMind Labs brand kit. Load brand-styles.json and follow skills/opticmind-brand/SKILL.md. Build a dark, precise, operational interface: Obsidian canvas, Graphite panels, sparse Kintsugi Gold seams and accents, Space Grotesk headings, Manrope body, Cormorant Garamond italic only for brand-moment statements. Keep radii at 6px, reserve gold for signal, dividers, and primary actions, and use kintsugi textures only as low-opacity hero backdrops vignetted into Obsidian.",
+    "copywriting": "Write in the OpticMind Labs voice: precise, composed, human. Use specific operational language and measurable outcomes. Lean on the kintsugi idea - fractures traced and filled with intelligence - for brand moments. The slogan is 'Turning movements into meaning' (sentence case, no exclamation mark). Avoid hype, vague futurism, fear-based surveillance language, and exaggerated claims. The tone should feel calm, intelligent, and useful.",
+    "visualAsset": "Create an OpticMind Labs visual asset: obsidian background, restrained gold seams, engineered composition, high contrast. Use the eye/iris/hexagon motif or the swarm particle ring when it clarifies the message, and the production dome-camera lockup (assets/opticmind-labs-logo.png) for official applications. Kintsugi photo textures only at low opacity behind heroes. No off-brand blues, playful gradients, pastels, heavy decoration, or blurry stock imagery."
   }
 }

@@ -18,6 +18,24 @@
     "$schema": {
       "type": "string"
     },
+    "assets": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/assetToken" }
+    },
+    "motif": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "principle", "rules"],
+      "properties": {
+        "name": { "type": "string" },
+        "principle": { "type": "string" },
+        "rules": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      }
+    },
     "brand": {
       "type": "object",
       "required": [
@@ -33,7 +51,10 @@
         "shortName": { "type": "string" },
         "version": { "type": "string" },
         "tagline": { "type": "string" },
-        "positioning": { "type": "string" }
+        "slogan": { "type": "string" },
+        "brandLine": { "type": "string" },
+        "positioning": { "type": "string" },
+        "narrative": { "type": "string" }
       }
     },
     "voice": {
@@ -180,6 +201,18 @@
     }
   },
   "$defs": {
+    "assetToken": {
+      "type": "object",
+      "required": [
+        "path",
+        "usage"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "path": { "type": "string" },
+        "usage": { "type": "string" }
+      }
+    },
     "colorGroup": {
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/colorToken" }

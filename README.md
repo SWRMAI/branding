@@ -8,6 +8,9 @@ Static GitHub Pages brand kit for OpticMind Labs. The site documents the core id
 - `brand-styles.json` - Agent-ready source of truth for brand tokens and usage rules.
 - `brand-styles.schema.json` - JSON Schema for validating brand style files.
 - `skills/opticmind-brand/SKILL.md` - Agent skill for implementing the brand consistently.
+- `assets/opticmind-labs-logo.png` - Official production logo lockup.
+- `assets/kintsugi-*.{jpg,webp,avif}` - Kintsugi textures for hero backdrops and motif imagery.
+- `ref/` - Local reference design explorations (gitignored, not published).
 
 ## Using the Brand JSON
 
