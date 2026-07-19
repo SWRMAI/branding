@@ -1,11 +1,11 @@
 ---
 name: opticmind-brand
-description: Use when creating or reviewing OpticMind Labs UI, copy, visual assets, decks, websites, or design tokens. Enforces the OpticMind brand system from brand-styles.json, including colors, typography, logo assets, the kintsugi motif, layout, voice, and agent prompts.
+description: Use when creating or reviewing Optic MindLabs UI, copy, visual assets, decks, websites, or design tokens. Enforces the OpticMind brand system from brand-styles.json, including colors, typography, logo assets, the kintsugi motif, layout, voice, company facts, and agent prompts.
 ---
 
-# OpticMind Labs Brand
+# Optic MindLabs Brand
 
-Use this skill whenever output must follow the OpticMind Labs brand.
+Use this skill whenever output must follow the Optic MindLabs brand.
 
 ## Source Of Truth
 
@@ -15,7 +15,24 @@ Use this skill whenever output must follow the OpticMind Labs brand.
 
 ## Brand Idea
 
-The brand is built on the kintsugi principle: **the fracture is where the gold goes**. OpticMind traces gaps in awareness and fills them with intelligence. Brand line: "Beauty in the break." Slogan: "Turning movements into meaning" (sentence case, no exclamation mark). Tagline: "Capture. Analyze. Optimize."
+The brand is built on the kintsugi principle: **the fracture is where the gold goes**. OpticMind traces gaps in awareness and fills them with intelligence.
+
+- Brand line: "Beauty in the break."
+- Slogan (what we do): "Capture. Analyze. Optimize." — presented as fact, in the order we build.
+- Tagline: "We proudly turn movements into meaning."
+
+## Company Facts
+
+Pull specifics from the `company` section of `brand-styles.json`. The essentials:
+
+- Canadian-founded, anchored in North America, built for a global market.
+- Sensing: vision, lidar, audio, and Wi-Fi capture detecting people, vehicles, animals, and objects in motion — direction, movement, size, colour, and safety details like hard hats and vests.
+- Hardware (working name "da'box"): enterprise line for job sites, facilities, and fleets (purchase or rent), plus a retail residential product for households.
+- Platform: cloud-based SaaS portal and mobile app, subscription tiers from homeowner to nonprofit to enterprise; analyzes patterns and anomalies and triggers real-world responses (text, email, control switch), enriched with weather and geolocation data.
+- Research lab (the "Labs" the company is named for): fully funded partnerships with corporations and educational institutions, two to three industry papers a year.
+- Leadership: Daniel Blair (Co-Founder & CTO — technology vision, hardware, AI, research) and Jerin Valel (Co-Founder & COO — operations and go-to-market).
+
+**Naming:** written name is "Optic MindLabs"; the wordmark lockup renders OPTICMIND / LABS; the production logo art reads "Optic Mind Labs". Product names and division structure are working language and may evolve — do not invent new product names.
 
 ## Logo Assets
 
@@ -45,9 +62,13 @@ The brand is built on the kintsugi principle: **the fracture is where the gold g
 
 ## Voice
 
-Write with precision, composure, and human usefulness.
+Write with precision, composure, plain-spoken confidence, and human usefulness.
 
 - Prefer measurable details and operational specifics.
+- Be plain-spoken and literal about what things do: "turns what a camera sees into what a business needs to know."
+- Present the slogan as fact, in build order: "Capture. Analyze. Optimize. That's not just a slogan we picked for effect. It's the order we build in."
+- Anchor benefits in outcomes: see clearly, decide faster, stay safer.
+- Speak to every audience with the same respect — an enterprise job site tracking hard hats and a homeowner keeping an eye on their property get the same clarity.
 - Lean on the kintsugi idea — fractures traced and filled with intelligence — for brand moments.
 - Avoid vague futurism and exaggerated claims.
 - Avoid fear-based surveillance language: we connect, we don't surveil.

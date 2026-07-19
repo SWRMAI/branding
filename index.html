@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OpticMind Labs brand kit, design tokens, prompts, and agent implementation guidance.">
-  <title>OpticMind Labs Brand Kit</title>
+  <meta name="description" content="Optic MindLabs brand kit, design tokens, prompts, and agent implementation guidance.">
+  <title>Optic MindLabs Brand Kit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -424,6 +424,18 @@
     .voice-card h3 { color: var(--gold-bright); font-size: 18px; margin-bottom: 10px; }
     .voice-card p { font-size: 14.5px; line-height: 1.7; color: var(--stone); }
 
+    .pullquote {
+      margin-top: 48px;
+      padding-left: 28px;
+      border-left: 2px solid var(--gold);
+      font-family: var(--font-accent);
+      font-style: italic;
+      font-size: clamp(22px, 3vw, 30px);
+      line-height: 1.35;
+      color: var(--gold-bright);
+      max-width: 760px;
+    }
+
     /* ===== Applications ===== */
     .apps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 
@@ -564,7 +576,7 @@
 
   <nav class="nav">
     <div class="wrap nav-inner">
-      <a class="brand-wordmark" href="#top" aria-label="OpticMind Labs home">
+      <a class="brand-wordmark" href="#top" aria-label="Optic MindLabs home">
         <svg class="monogram" viewBox="0 0 140 140" aria-hidden="true">
           <circle cx="70" cy="70" r="52" fill="none" stroke="url(#omGold)" stroke-width="9"/>
           <path d="M70 18 L78 42 L65 60 L82 80 L72 102 L83 122" fill="none" stroke="url(#omGoldV)" stroke-width="3.2" stroke-linecap="round"/>
@@ -590,10 +602,10 @@
     <header class="hero">
       <div class="hero-inner">
         <img class="hero-logo" src="assets/opticmind-labs-logo.png" alt="Optic Mind Labs logo — a gold dome camera with an AI core inside a ring of particles, with the tagline Capture. Analyze. Optimize.">
-        <p class="eyebrow gold" style="margin-top:34px">OpticMind Labs · Brand Guidelines v1.0</p>
+        <p class="eyebrow gold" style="margin-top:34px">Optic MindLabs &middot; Brand Guidelines v1.1</p>
         <h1>Beauty in the<br><span class="serif-italic gold-text">break.</span></h1>
-        <p class="slogan">Turning movements into meaning</p>
-        <p class="lede">We sense the world through emerging technology &mdash; turning raw signal into understanding. A brand built on the kintsugi principle: the fracture is where the gold goes.</p>
+        <p class="slogan">We proudly turn movements into meaning.</p>
+        <p class="lede">Optic MindLabs turns what a camera sees into what a business needs to know &mdash; capture technology that detects motion, and a platform that turns it into reports, alerts, and action. A brand built on the kintsugi principle: the fracture is where the gold goes.</p>
         <div class="pillars" aria-label="Brand pillars">
           <span>CAPTURE</span><span class="dot">&middot;</span>
           <span>ANALYZE</span><span class="dot">&middot;</span>
@@ -613,10 +625,24 @@
         <div>
           <p class="eyebrow">01 &mdash; The Idea</p>
           <h2>Vision, repaired in gold.</h2>
-          <p>OpticMind builds distributed computer-vision and remote command systems that see what others miss. Our flagship platform, <span class="accent" style="font-weight:600">SWRM</span>, connects thousands of edge sensors into a single, living field of perception.</p>
+          <p>Optic MindLabs is a Canadian-founded technology company built for a global market, on a simple premise: the world generates enormous amounts of visual and physical data every day, and almost none of it gets used. We build the tools to capture it &mdash; <span class="accent" style="font-weight:600">vision, lidar, audio, and Wi-Fi sensing</span> that detects people, vehicles, animals, and objects in motion &mdash; and put it to work as reports, alerts, and action.</p>
           <p>Kintsugi &mdash; the Japanese art of mending with gold &mdash; is our governing metaphor. The world is full of gaps in awareness. We trace those fractures and fill them with intelligence, making the whole stronger and more beautiful than before.</p>
         </div>
         <div class="photo" role="img" aria-label="Black kintsugi vase repaired with gold seams"></div>
+      </div>
+      <div class="grid three" style="margin-top:48px">
+        <div class="type-card">
+          <h3 class="accent">Hardware</h3>
+          <p style="font-size:14px;color:var(--stone);line-height:1.7;margin-top:10px">Multi-sensor capture devices &mdash; working name <span class="accent">da&rsquo;box</span> &mdash; tracking direction, movement, size, colour, and safety details like hard hats and vests. Built for scale on job sites, facilities, and fleets (purchase or rent), with a retail residential product sized for everyday households.</p>
+        </div>
+        <div class="type-card">
+          <h3 class="accent">Platform</h3>
+          <p style="font-size:14px;color:var(--stone);line-height:1.7;margin-top:10px">Every device connects to our cloud-based SaaS portal and mobile app, on subscription tiers from homeowner to nonprofit to enterprise. It analyzes patterns and anomalies and triggers real-world responses &mdash; a text, an email, a control switch &mdash; sharpened with weather and geolocation data.</p>
+        </div>
+        <div class="type-card">
+          <h3 class="accent">Research</h3>
+          <p style="font-size:14px;color:var(--stone);line-height:1.7;margin-top:10px">The lab the company is named for. Fully funded research with corporations and educational institutions, producing two to three industry papers a year &mdash; because the best products come from people who still get to be curious.</p>
+        </div>
       </div>
     </section>
 
@@ -837,11 +863,13 @@
     <section id="voice">
       <p class="eyebrow">07 &mdash; Voice</p>
       <h2 style="margin-bottom:40px">How the brand speaks</h2>
-      <div class="grid three">
+      <div class="grid four">
         <div class="voice-card"><h3>Precise</h3><p>We speak in specifics &mdash; latency in milliseconds, coverage in square kilometers. No vague futurism.</p></div>
         <div class="voice-card"><h3>Composed</h3><p>Confidence without hype. We have nothing to prove and everything to show. Calm authority.</p></div>
-        <div class="voice-card"><h3>Human</h3><p>Technology in service of people and places. We connect, we don&rsquo;t surveil. Warmth in the gold.</p></div>
+        <div class="voice-card"><h3>Plain-spoken</h3><p>What a camera sees, what a business needs to know. We say what things do, in the order they do it.</p></div>
+        <div class="voice-card"><h3>Human</h3><p>Technology in service of people and places &mdash; from an enterprise job site to a homeowner&rsquo;s backyard. We help people see clearly, decide faster, and stay safer. We connect, we don&rsquo;t surveil.</p></div>
       </div>
+      <blockquote class="pullquote">Capture. Analyze. Optimize. That&rsquo;s not just a slogan we picked for effect &mdash; it&rsquo;s the order we build in.</blockquote>
     </section>
 
     <!-- ===== 08 Applications ===== -->
@@ -909,7 +937,7 @@
             <h3>UI Implementation</h3>
             <button class="copy-button" type="button" data-copy="#promptUi">Copy</button>
           </div>
-          <pre id="promptUi">Use the OpticMind Labs brand kit. Load brand-styles.json and follow skills/opticmind-brand/SKILL.md. Build a dark, precise, operational interface: Obsidian canvas, Graphite panels, sparse Kintsugi Gold seams and accents, Space Grotesk headings, Manrope body, Cormorant Garamond italic only for brand-moment statements. Keep radii at 6px, reserve gold for signal, dividers, and primary actions, and use kintsugi textures only as low-opacity hero backdrops vignetted into Obsidian.</pre>
+          <pre id="promptUi">Use the Optic MindLabs brand kit. Load brand-styles.json and follow skills/opticmind-brand/SKILL.md. Build a dark, precise, operational interface: Obsidian canvas, Graphite panels, sparse Kintsugi Gold seams and accents, Space Grotesk headings, Manrope body, Cormorant Garamond italic only for brand-moment statements. Keep radii at 6px, reserve gold for signal, dividers, and primary actions, and use kintsugi textures only as low-opacity hero backdrops vignetted into Obsidian.</pre>
         </article>
 
         <article class="prompt">
@@ -917,7 +945,7 @@
             <h3>Copywriting</h3>
             <button class="copy-button" type="button" data-copy="#promptCopy">Copy</button>
           </div>
-          <pre id="promptCopy">Write in the OpticMind Labs voice: precise, composed, human. Use specific operational language and measurable outcomes. Lean on the kintsugi idea — fractures traced and filled with intelligence — for brand moments. The slogan is "Turning movements into meaning" (sentence case, no exclamation mark). Avoid hype, vague futurism, fear-based surveillance language, and exaggerated claims. The tone should feel calm, intelligent, and useful.</pre>
+          <pre id="promptCopy">Write in the Optic MindLabs voice: precise, composed, plain-spoken, human. Slogan: "Capture. Analyze. Optimize." — always presented as what we do, in the order we build. Tagline: "We proudly turn movements into meaning." Outcomes: help people see clearly, decide faster, stay safer. Write for the full range of audiences — enterprise, government, nonprofit, homeowner — with the same respect. Use specific operational language and measurable outcomes, and lean on the kintsugi idea for brand moments. Avoid hype, vague futurism, fear-based surveillance language, and exaggerated claims.</pre>
         </article>
 
         <article class="prompt">
@@ -925,7 +953,7 @@
             <h3>Visual Asset</h3>
             <button class="copy-button" type="button" data-copy="#promptAsset">Copy</button>
           </div>
-          <pre id="promptAsset">Create an OpticMind Labs visual asset: obsidian background, restrained gold seams, engineered composition, high contrast. Use the eye/iris/hexagon motif or the swarm particle ring when it clarifies the message, and the production dome-camera lockup for official applications. Kintsugi photo textures only at low opacity behind heroes. No off-brand blues, playful gradients, pastels, heavy decoration, or blurry stock imagery.</pre>
+          <pre id="promptAsset">Create an Optic MindLabs visual asset: obsidian background, restrained gold seams, engineered composition, high contrast. Use the eye/iris/hexagon motif or the swarm particle ring when it clarifies the message, and the production dome-camera lockup for official applications. Kintsugi photo textures only at low opacity behind heroes. No off-brand blues, playful gradients, pastels, heavy decoration, or blurry stock imagery.</pre>
         </article>
       </div>
 
@@ -946,7 +974,7 @@
   </main>
 
   <footer class="footer">
-    <div class="wrap">OpticMind Labs &mdash; Turning movements into meaning &middot; Brand Guidelines v1.0</div>
+    <div class="wrap">Optic MindLabs &mdash; We proudly turn movements into meaning &middot; Brand Guidelines v1.1</div>
   </footer>
 
   <script>

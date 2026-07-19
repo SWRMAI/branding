@@ -1,6 +1,6 @@
-# OpticMind Labs Brand Kit
+# Optic MindLabs Brand Kit
 
-Static GitHub Pages brand kit for OpticMind Labs. The site documents the core identity, color system, typography, motif, voice, downloadable style JSON, schema, prompts, and reusable agent skill guidance.
+Static GitHub Pages brand kit for Optic MindLabs. The site documents the core identity, color system, typography, motif, voice, downloadable style JSON, schema, prompts, and reusable agent skill guidance.
 
 ## Files
 

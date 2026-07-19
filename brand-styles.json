@@ -1,14 +1,39 @@
 {
   "$schema": "./brand-styles.schema.json",
   "brand": {
-    "name": "OpticMind Labs",
+    "name": "Optic MindLabs",
     "shortName": "OpticMind",
-    "version": "1.0",
-    "tagline": "Capture. Analyze. Optimize.",
-    "slogan": "Turning movements into meaning",
+    "version": "1.1",
+    "tagline": "We proudly turn movements into meaning.",
+    "slogan": "Capture. Analyze. Optimize.",
     "brandLine": "Beauty in the break.",
-    "positioning": "A precise, composed visual system for intelligent perception products, built on the kintsugi principle: the fracture is where the gold goes.",
-    "narrative": "OpticMind builds distributed computer-vision and remote command systems that see what others miss. Kintsugi - the Japanese art of mending with gold - is the governing metaphor: the world is full of gaps in awareness, and OpticMind traces those fractures and fills them with intelligence."
+    "positioning": "A Canadian-founded technology company built for a global market: capture technology and a cloud platform that turn what a camera sees into what a business needs to know. The visual system is precise and composed, built on the kintsugi principle: the fracture is where the gold goes.",
+    "narrative": "The world generates enormous amounts of visual and physical data every day, and almost none of it gets used. Optic MindLabs builds the tools to capture it - vision, lidar, audio, and Wi-Fi sensing that detects people, vehicles, animals, and objects in motion - and turn it into reports, alerts, and action. Kintsugi - the Japanese art of mending with gold - is the governing metaphor: the world is full of gaps in awareness, and Optic MindLabs traces those fractures and fills them with intelligence. The slogan is literal: Capture. Analyze. Optimize. is the order we build in."
+  },
+  "company": {
+    "origin": "Founded in Canada, anchored in North America, built for a global market.",
+    "sensing": "Vision, lidar, audio, and Wi-Fi capture that detects people, vehicles, animals, and objects in motion - direction, movement, size, colour, and safety-relevant details like hard hats and safety vests.",
+    "hardware": "Multi-sensor capture device (working name 'da'box'). Business/enterprise line built for scale - job sites, facilities, fleets - available for purchase or rent; a retail residential product brings the same technology home, sized and priced for everyday households.",
+    "platform": "Cloud-based SaaS portal and mobile app on subscription tiers for everyone from a homeowner to a small nonprofit to a large enterprise. Analyzes patterns and anomalies and can trigger real-world responses (a text, an email, a control switch), enriched with weather and geolocation data.",
+    "research": "The research lab the company is named for: fully funded research partnerships with corporations and educational institutions, producing two to three industry papers a year, giving staff and select students genuinely cutting-edge problems.",
+    "audiences": [
+      "enterprise and government",
+      "small business and nonprofit",
+      "homeowners and consumers"
+    ],
+    "leadership": [
+      {
+        "name": "Daniel Blair",
+        "role": "Co-Founder & Chief Technology Officer",
+        "summary": "Educator, researcher, and technologist in immersive technology and AI; founder and CTO of BSD XR; instructor in the ACE Project Space at Red River College Polytechnic; award-winning entrepreneur focused on ethical deployment of emerging technology. Leads the technology vision: sensing hardware, the AI behind it, and the research lab."
+      },
+      {
+        "name": "Jerin Valel",
+        "role": "Co-Founder & Chief Operating Officer",
+        "summary": "COO at IDFusion; former Deputy Minister of Economic Development, Investment and Trade and former Assistant Deputy Minister; executive roles at Permission Click, Bell, and MTS across a 20-year public/private career. Leads operational and go-to-market discipline: turning proven technology into a company governments and enterprises can trust."
+      }
+    ],
+    "namingNote": "Written name: 'Optic MindLabs'. Wordmark lockup renders OPTICMIND / LABS; the production logo art reads 'Optic Mind Labs'. Product names and division structure (e.g. 'da'box') are working language and may evolve."
   },
   "assets": {
     "productionLogo": {
@@ -41,11 +66,15 @@
     "traits": [
       "precise",
       "composed",
+      "plain-spoken",
       "human"
     ],
     "guidelines": [
       "Use measurable details and operational specifics - latency in milliseconds, coverage in square kilometers.",
       "Prefer calm authority over hype.",
+      "Be plain-spoken and literal about what things do: 'turns what a camera sees into what a business needs to know'. The slogan is presented as fact, in build order: 'Capture. Analyze. Optimize. That's not just a slogan we picked for effect. It's the order we build in.'",
+      "Anchor benefits in outcomes: help people see clearly, decide faster, and stay safer.",
+      "Speak to the full range of audiences with the same respect - an enterprise job site tracking hard hats and a homeowner keeping an eye on their property.",
       "Frame technology as serving people and places: we connect, we don't surveil.",
       "Lean on the kintsugi idea - fractures traced and filled with intelligence - for brand moments.",
       "Avoid vague futurism, fear-based surveillance language, and exaggerated claims."
@@ -266,8 +295,8 @@
     ]
   },
   "agentPrompts": {
-    "uiImplementation": "Use the OpticMind Labs brand kit. Load brand-styles.json and follow skills/opticmind-brand/SKILL.md. Build a dark, precise, operational interface: Obsidian canvas, Graphite panels, sparse Kintsugi Gold seams and accents, Space Grotesk headings, Manrope body, Cormorant Garamond italic only for brand-moment statements. Keep radii at 6px, reserve gold for signal, dividers, and primary actions, and use kintsugi textures only as low-opacity hero backdrops vignetted into Obsidian.",
-    "copywriting": "Write in the OpticMind Labs voice: precise, composed, human. Use specific operational language and measurable outcomes. Lean on the kintsugi idea - fractures traced and filled with intelligence - for brand moments. The slogan is 'Turning movements into meaning' (sentence case, no exclamation mark). Avoid hype, vague futurism, fear-based surveillance language, and exaggerated claims. The tone should feel calm, intelligent, and useful.",
-    "visualAsset": "Create an OpticMind Labs visual asset: obsidian background, restrained gold seams, engineered composition, high contrast. Use the eye/iris/hexagon motif or the swarm particle ring when it clarifies the message, and the production dome-camera lockup (assets/opticmind-labs-logo.png) for official applications. Kintsugi photo textures only at low opacity behind heroes. No off-brand blues, playful gradients, pastels, heavy decoration, or blurry stock imagery."
+    "uiImplementation": "Use the Optic MindLabs brand kit. Load brand-styles.json and follow skills/opticmind-brand/SKILL.md. Build a dark, precise, operational interface: Obsidian canvas, Graphite panels, sparse Kintsugi Gold seams and accents, Space Grotesk headings, Manrope body, Cormorant Garamond italic only for brand-moment statements. Keep radii at 6px, reserve gold for signal, dividers, and primary actions, and use kintsugi textures only as low-opacity hero backdrops vignetted into Obsidian.",
+    "copywriting": "Write in the Optic MindLabs voice: precise, composed, plain-spoken, human. Slogan: 'Capture. Analyze. Optimize.' - always presented as what we do, in the order we build. Tagline: 'We proudly turn movements into meaning.' Outcomes: help people see clearly, decide faster, stay safer. Write for the full range of audiences - enterprise, government, nonprofit, homeowner - with the same respect. Use specific operational language and measurable outcomes (see the company section of brand-styles.json for facts), and lean on the kintsugi idea for brand moments. Avoid hype, vague futurism, fear-based surveillance language, and exaggerated claims.",
+    "visualAsset": "Create an Optic MindLabs visual asset: obsidian background, restrained gold seams, engineered composition, high contrast. Use the eye/iris/hexagon motif or the swarm particle ring when it clarifies the message, and the production dome-camera lockup (assets/opticmind-labs-logo.png) for official applications. Kintsugi photo textures only at low opacity behind heroes. No off-brand blues, playful gradients, pastels, heavy decoration, or blurry stock imagery."
   }
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://opticmind-labs.github.io/branding/brand-styles.schema.json",
-  "title": "OpticMind Labs Brand Styles",
+  "title": "Optic MindLabs Brand Styles",
   "type": "object",
   "required": [
     "brand",
@@ -17,6 +17,35 @@
   "properties": {
     "$schema": {
       "type": "string"
+    },
+    "company": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "origin": { "type": "string" },
+        "sensing": { "type": "string" },
+        "hardware": { "type": "string" },
+        "platform": { "type": "string" },
+        "research": { "type": "string" },
+        "audiences": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "leadership": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "role", "summary"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": "string" },
+              "summary": { "type": "string" }
+            }
+          }
+        },
+        "namingNote": { "type": "string" }
+      }
     },
     "assets": {
       "type": "object",
